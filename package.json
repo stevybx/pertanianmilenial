@@ -1,0 +1,10 @@
+{
+  "name": "pertanianmilenial-25proj",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'no build script'",
+    "build:index": "node scripts/generateIndex.js"
+  }
+}
+

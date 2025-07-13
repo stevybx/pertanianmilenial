@@ -1,0 +1,8 @@
+[build]
+  publish = "dist"   # Ganti "dist" ke folder kamu, kalau `.` (root), ya tulis "."
+  command = "npm run build:index"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

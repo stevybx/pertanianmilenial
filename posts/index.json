@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "perkenalan",
+    "title": "Perkenalan Ekstrakurikuler Pertanian Milenial: Bergabunglah Bersama Kami!",
+    "date": "2025-07-13",
+    "category": "berita",
+    "thumbnail": "/assets/uploads/post1.jpg?height=400&width=600",
+    "excerpt": "Selamat datang di blog resmi Pertanian Milenial! Yuk kenalan sama visi, tujuan, dan keseruan yang bakal kita bangun bareng-bareng di sini 🌱",
+    "readTime": 3,
+    "writer": "Admin PM25"
+  },
+  {
+    "slug": "tested",
+    "title": "tested 209 error",
+    "date": "2025-01-01",
+    "category": "kegiatan",
+    "thumbnail": "assets/slide1.jpg?height=400&width=600",
+    "excerpt": "Pelajari cara membuat pupuk organik sendiri menggunakan bahan-bahan yang ada di dapur. Solusi ramah lingkungan untuk pertanian berkelanjutan.",
+    "readTime": 5,
+    "writer": "Stevyuss"
+  },
+  {
+    "slug": "panen-perdana-hidroponik-selada",
+    "title": "Panen Perdana Hidroponik Selada: Hasil Memuaskan dari Kerja Keras Siswa",
+    "date": "2025-01-15",
+    "category": "kegiatan",
+    "thumbnail": "assets/slide1.jpg?height=400&width=600",
+    "excerpt": "Siswa ekstrakurikuler Pertanian Milenial berhasil memanen selada hidroponik pertama mereka dengan hasil yang sangat memuaskan. Proses pembelajaran selama 3 bulan akhirnya membuahkan hasil yang gemilang.",
+    "readTime": 5
+  },
+  {
+    "slug": "tutorial-membuat-sistem-hidroponik-sederhana",
+    "title": "Tutorial Membuat Sistem Hidroponik Sederhana untuk Pemula",
+    "date": "2025-01-12",
+    "category": "tutorial",
+    "thumbnail": "assets/slide1.jpg?height=400&width=600",
+    "excerpt": "Pelajari cara membuat sistem hidroponik sederhana yang bisa diterapkan di rumah dengan budget terjangkau. Cocok untuk pemula yang ingin memulai bertani modern.",
+    "readTime": 8
+  }
+]

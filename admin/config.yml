@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["kegiatan", "tutorial", "berita", "tips"]}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Read Time (minutes)", name: "readTime", widget: "number", default: 5}
+      - {label: "Writer", name: "writer", widget: "string", required: false, hint: "Nama penulis artikel"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Blog Index"
+        name: "blog_index"
+        file: "posts/index.json"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - {label: "Slug", name: "slug", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime"}
+              - {label: "Category", name: "category", widget: "select", options: ["kegiatan", "tutorial", "berita", "tips"]}
+              - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+              - {label: "Excerpt", name: "excerpt", widget: "text"}
+              - {label: "Read Time", name: "readTime", widget: "number"}
+              - {label: "Writer", name: "writer", widget: "string", required: false}
