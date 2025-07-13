@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm run build:index && npm run copy",
+    "build": "npm run build:index && npm run build:blog && npm run copy",
     "build:index": "node scripts/generateIndex.js",
-    "copy": "rm -rf dist && mkdir dist && cp -r *.html *.js posts assets admin uploads dist/ || true"
-
+    "build:blog": "node scripts/generateBlogPages.js",
+    "copy": "rm -rf dist && mkdir dist && cp -r *.html *.js posts assets admin uploads dist/ || true && cp -r blog dist/"
   },
   "dependencies": {
     "fs-extra": "^11.1.1"
+    "marked": "^9.1.2"
   }
 }
