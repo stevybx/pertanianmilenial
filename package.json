@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "echo 'no build script'",
-    "build:index": "node scripts/generateIndex.js"
+    "build": "npm run build:index && npm run copy",
+    "build:index": "node scripts/generateIndex.js",
     "copy": "rm -rf dist && mkdir dist && cp -r *.html posts assets admin uploads dist/"
   }
 }
-
