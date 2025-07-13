@@ -476,21 +476,21 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-          // Cek apakah ada confirmation_token di URL
-  const urlParams = new URLSearchParams(window.location.hash.replace('#', '?'));
-  const token = urlParams.get('confirmation_token');
+          // Tangkap token konfirmasi dari URL
+  const hash = window.location.hash;
+  if (hash.includes('confirmation_token=')) {
+    const token = hash.split('confirmation_token=')[1];
 
-  if (token) {
     fetch(`/.netlify/identity/confirm?confirmation_token=${token}`, {
       method: "POST"
     })
     .then(() => {
-      alert("Email berhasil dikonfirmasi! Silakan login.");
-      window.location.href = "/admin"; // Arahkan ulang ke login Netlify CMS
+      alert("✅ Email berhasil dikonfirmasi! Silakan login.");
+      window.location.href = "/admin"; // redirect ke halaman login Netlify CMS
     })
-    .catch(err => {
+    .catch((err) => {
       console.error("Konfirmasi gagal:", err);
-      alert("Konfirmasi gagal. Coba ulangi atau hubungi admin.");
+      alert("❌ Gagal mengonfirmasi email. Silakan coba lagi.");
     });
   }
         
