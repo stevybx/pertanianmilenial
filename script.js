@@ -1,5 +1,5 @@
 // Google Apps Script Web App URL - Ganti dengan URL Apps Script kamu
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyujeuvZZ8rCYQgQ2oOgP_w26MJY99mkDBffJdDUVq9345IxuHGfkapfir0JU6u0ulSTA/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz7k2v0ij2vvib7xcJjMy5XV2cgnSeZ13bcK0ZADPCFbNIJwr6wanibFS7fZsrlkePfqg/exec';
 
 // Form submission handler
 document.getElementById('registrationForm').addEventListener('submit', async function(e) {
