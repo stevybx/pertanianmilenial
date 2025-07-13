@@ -5,6 +5,7 @@
   "scripts": {
     "build": "echo 'no build script'",
     "build:index": "node scripts/generateIndex.js"
+    "copy": "rm -rf dist && mkdir dist && cp -r *.html posts assets admin uploads dist/"
   }
 }
 
